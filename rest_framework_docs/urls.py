@@ -1,7 +1,7 @@
-from django.conf.urls import url
+from django.urls import re_path
 from rest_framework_docs.views import DRFDocsView
 
 urlpatterns = [
     # Url to view the API Docs
-    url(r'^$', DRFDocsView.as_view(), name='drfdocs'),
+    re_path(r'^$', DRFDocsView.as_view(), name='drfdocs'),
 ]
